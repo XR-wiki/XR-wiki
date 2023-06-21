@@ -1,0 +1,105 @@
+# Project Information
+site_name: XR Wiki
+site_description: XR(Extended Reality) Wiki
+site_url: https://xr-wiki.org
+site_author: XR Wiki Team
+
+# Repository
+repo_name: 'Xrdev-M/XR-wiki'
+repo_url: 'https://github.com/Xrdev-M/XR-wiki'
+edit_uri: 'https://xr-wiki.org/edit-landing/?ref='
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2023 XR Wiki Team
+
+# Theme
+theme:
+    name: material
+    language: 'zh'
+    palette:
+    
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      #accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      #primary: blue
+      #accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+        
+    icon:
+        repo: fontawesome/brands/github
+        admonition:
+            note: octicons/tag-16
+            abstract: octicons/checklist-16
+            info: octicons/info-16
+            tip: octicons/squirrel-16
+            success: octicons/check-16
+            question: octicons/question-16
+            warning: octicons/alert-16
+            failure: octicons/x-circle-16
+            danger: octicons/zap-16
+            bug: octicons/bug-16
+            example: octicons/beaker-16
+            quote: octicons/quote-16      
+    font:
+        text: Noto Sans
+        code: Source Code Pro
+        
+        
+    include_search_page: false
+    search_index_only: true
+    features:
+    - navigation.tabs
+    #- navigation.instant
+    - navigation.top 
+    - search.suggest
+    - search.highlight
+    - navigation.expand
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+     anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Extra
+extra:
+  analytics:
+    provider: google
+    property: G-CRF0JC8VM5
+
+# Plugins
+plugins:  
+    - search:
+        lang:
+            - en
+            - zh
+    - tags
+    
+# Contents
+nav:
+    - 简介:
+        - Getting Started: index.md
+   
+   
