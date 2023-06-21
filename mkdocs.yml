@@ -16,30 +16,30 @@ copyright: Copyright &copy; 2016 - 2023 XR Wiki Team
 theme:
     name: material
     language: 'zh'
-    palette:
-    
+    logo: icon/512x512.png
+    palette:   
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-
-    # Palette toggle for light mode
+    
+    
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       #accent: red
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      #primary: blue
+      primary: black
       #accent: blue
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-4
         name: Switch to light mode
         
     icon:
@@ -64,6 +64,8 @@ theme:
         
     include_search_page: false
     search_index_only: true
+    favicon: 'icon/favicon.ico'
+    
     features:
     - navigation.tabs
     #- navigation.instant
@@ -71,6 +73,10 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
 
 # Extensions
 markdown_extensions:
@@ -82,15 +88,26 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes
+  - meta
 
 # Extra
 extra:
   analytics:
     provider: google
     property: G-CRF0JC8VM5
-
+  disqus: 'XR-Wiki'
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> and <a href="https://github.com/zTrix/sata-license">SATA</a>'
+  pagetime: 'on'
+  manifest: '/icon/manifest.webmanifest'
+  #githash: ''
+  alternate:
+    - link: /
+      name: zh - 中文
+    - link: /en/
+      name: en - English
 # Plugins
-plugins:  
+plugins: 
     - search:
         lang:
             - en
